@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+                                                
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1rem;
+  font-style: normal;
+                                                
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.list ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; margin: 30px;
+    gap: 20px;
+}
+.list ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.4s linear;
+}
+.list ul li:hover{
+    background: linear-gradient(100deg,orange,rgb(255, 144, 163));
+}
+.dark-mode .list ul li:hover{
+    background: linear-gradient(100deg,rgb(60, 60, 60),rgb(204, 202, 202));
+
+    }
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+.listbtn{
+    margin: 30px;
+}
+.side-bar {
+    position: fixed; 
+    top: 120px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: rgb(144, 143, 143);
+    transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0; 
+}
+
+.side-bar.show {
+    right: 0; 
+    opacity: 1;
+}
+
+.side{
+    background: rgb(144, 143, 143);
+    padding: 10px;
+    height: 100vh;
+    width: 300px;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    padding: 2px 5px;
+    width: 250px;
+}
+.search input{
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 200px;
+    padding: 5px 20px;
+    border-radius: 30px;
+    border: 0;
+}
+.dark-mode .side{
+    background-color: black;
+    border: 1px solid rgb(87, 86, 86);
+}
+.dark-mode .bi-search{
+   color: black;
+}
+.darkmode{
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 0;
+}
+.darkmode:hover{
+    background: linear-gradient(100deg,orange,rgb(255, 144, 163));
+}
+.dark-mode .darkmode {
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+.dark-mode .darkmode:hover{
+    background: linear-gradient(100deg,rgb(60, 60, 60),rgb(204, 202, 202));
+
+}
+.list-side{
+    margin: 10px;
+    border-top: 2px solid rgb(66, 66, 66);
+    padding: 20px;
+}
+.list-side ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.list-side ul li{
+    list-style: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: 0.4s linear;
+}
+.list-side ul li:hover{
+    background: linear-gradient(100deg,orange,rgb(255, 144, 163));
+}
+.dark-mode .list-side ul li:hover{
+    background: linear-gradient(100deg,rgb(60, 60, 60),rgb(204, 202, 202));
+    }
+    .a-list{
+        margin: 10px;
+        border-top: 2px solid rgb(66, 66, 66);
+        padding: 20px;
+    }
+    .a-list ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .a-list ul li{
+        list-style: none;
+        border-radius: 20px;
+        padding: 5px 10px;
+        font-weight: bold;
+        transition: 0.4s linear;
+    }
+    .a-list ul li:hover{
+        color: orange;
+    }
+    .manga-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .manga-main h1{
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 10px;
+    }
+    .manga-main p{
+        width: 500px;
+    }
+    .manga h1{
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 10px;
+    }
+    .manga1{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .manga2{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .hedes{
+        width: 500px;
+    }
+    .manga1:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .manga2:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .dark-mode .manga1:hover{
+        box-shadow: rgba(66, 65, 65, 0.25) 0px 54px 55px, rgba(102, 102, 102, 0.12) 0px -12px 30px, rgba(81, 80, 80, 0.12) 0px 4px 6px, rgba(90, 90, 90, 0.17) 0px 12px 13px, rgba(77, 76, 76, 0.09) 0px -3px 5px;
+    }
+    .dark-mode .manga2:hover{
+        box-shadow: rgba(66, 65, 65, 0.25) 0px 54px 55px, rgba(102, 102, 102, 0.12) 0px -12px 30px, rgba(81, 80, 80, 0.12) 0px 4px 6px, rgba(90, 90, 90, 0.17) 0px 12px 13px, rgba(77, 76, 76, 0.09) 0px -3px 5px;
+    }
+    .contect{
+        display: flex;
+        justify-content: center;
+        margin: 40px;
+    }
+    .contect1{
+        display: flex; flex-direction: column;
+        margin: 10px;
+        gap: 10px;
+    }
+    .contect1 textarea{
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 1.5rem;
+        width: 500px;
+        height: 200px;
+    }
+    .contect1 input{
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 1.5rem;
+        width: 500px;
+    }
+    .contect2{
+        display: flex;
+        gap: 40px;
+        margin: 10px;
+    }
+    .contect3{
+        display: flex;
+        flex-direction: column;
+    }
+    .contect3 input{
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 1.5rem;
+        width: 230px;
+    }
+    .contect4{
+        display: flex;
+        gap: 5px;
+        margin: 10px;
+    }
+    .btn{
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: 1px solid black;
+        background: none;
+        border-radius: 10px;
+    }
+    .btn:hover{
+        background: linear-gradient(100deg,orange,rgb(255, 144, 163));
+        color: white;
+        border: 0;
+    }
+    .dark-mode .btn{
+        color: white;
+        border: 1px solid rgb(85, 83, 83);
+    }
+    .dark-mode .btn:hover{
+        background: linear-gradient(100deg,rgb(60, 60, 60),rgb(204, 202, 202));
+        color: white;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(44, 43, 43);
+    }
+    footer ul {
+        display: flex;
+        gap:10px;
+        margin: 20px;
+    }
+    footer ul li{
+        list-style: none;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+    }
+    footer ul li:hover{
+        color: orange;
+    }
+    .image4{
+        margin: 30px;
+        padding: 30px;
+    }
+    .copy{
+        margin: 30px;
+        padding: 30px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: orange;
+    }
+@media (max-width:600px){
+    .list{
+        display: none;
+    }
+    .side-bar{
+        width: 100%;
+    }
+    .img1{
+        width: 100%;
+    }
+    .side-bar{
+        top:100px;
+        left: 100px;
+    }
+    .manga-main p{
+        width: 100%;
+    }
+    .manga1{
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .manga2{
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .dark-mode .manga1{
+        box-shadow: rgba(66, 65, 65, 0.25) 0px 54px 55px, rgba(102, 102, 102, 0.12) 0px -12px 30px, rgba(81, 80, 80, 0.12) 0px 4px 6px, rgba(90, 90, 90, 0.17) 0px 12px 13px, rgba(77, 76, 76, 0.09) 0px -3px 5px;
+    }
+    .dark-mode .manga2{
+        box-shadow: rgba(66, 65, 65, 0.25) 0px 54px 55px, rgba(102, 102, 102, 0.12) 0px -12px 30px, rgba(81, 80, 80, 0.12) 0px 4px 6px, rgba(90, 90, 90, 0.17) 0px 12px 13px, rgba(77, 76, 76, 0.09) 0px -3px 5px;
+    }
+    .hedes{
+        width: 100%;
+    }
+    .image3{
+        width:100%;
+    }
+    #order1{
+        order: 1;
+    }
+    .contect1 textarea{
+        width: 100%;
+    }
+    .contect1 input{
+        width: 100%;
+    }
+    .contect3 input{
+        width: 100%;
+    }
+    footer ul {
+        display: flex;
+        gap:10px;
+        flex-direction: column;
+    }
+    footer ul li span{
+        display: none;
+    }
+}
